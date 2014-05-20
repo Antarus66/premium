@@ -1,3 +1,5 @@
+@import url("sprites.css");
+
 /* --------------- Layout -----------------*/
 html {
     font-size: 100.01%;
@@ -58,18 +60,107 @@ header {
     border-left: 1px dashed #818187;
 }
 
+.social-ico {
+    top: 50%;
+    margin-top: -10px;
+    right: 35px;
+    font-size: 0;
+}
+
+.social-ico a {
+    display: inline-block;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-image: url("../images/sprites.png");
+}
+
+.social-ico:last-child {
+    margin-right: 0;
+}
+
+a.social-fb {
+    margin-right: 12px;
+}
+
 nav {
     height: 46px;
+    line-height: 52px;
     background: url("../images/menu-bg.png") no-repeat;
+    border-bottom: 1px dashed #9f9f9f;
+    overflow: visible;
+    position: relative;
+    padding: 0 95px 0;
+}
+
+nav::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 2px;
+    width: 100%;
+    border-top: 1px dashed #9f9f9f;
 }
 
 nav ul {
     margin: 0;
     padding: 0;
+    float: left;
 }
-nav ul li {
+nav li {
+    font: bold 1.2em Verdana, Arial, sans-serif;
     display: inline-block;
 }
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.active a {
+    color: #fff;
+    background: #636363;
+    border-radius: 3px;
+}
+
+.search-form {
+    display: inline-block;
+    float: right;
+    position: relative;
+}
+
+.search {
+    height:28px;
+    line-height: 28px;
+    margin-top: 9px;
+    border: 1px solid #d1d1d1;
+    width: 202px;
+    position: relative;
+    background: #fff;
+}
+.search-form input {
+    width: 170px;
+    border: none;
+    outline: none;
+    height:28px;
+    line-height: 30px;
+    padding: 0 5px 0;
+
+}
+
+.search-form button {
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    background-image: url("../images/sprites.png");
+    background-position: -94px -1px ;
+    width: 14px;
+    height: 14px;
+}
+
 /* ----------------------------------------*/
 
 /* --------------- Main -------------------*/
