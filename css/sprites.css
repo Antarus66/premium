@@ -1,0 +1,82 @@
+.social-fb, .social-rss, .social-tw, .books, .eye, .car, .label-red, .home, .lamp, .loup, .music, .phone, .speech{
+	background: url(sprites.png) no-repeat;
+}
+
+.social-fb{
+	background-position: -62px -1px ;
+	width: 7px;
+	height: 16px;
+}
+
+.social-rss{
+	background-position: -39px 0;
+	width: 14px;
+	height: 14px;
+}
+
+.social-tw{
+	background-position: -37px -20px ;
+	width: 20px;
+	height: 14px;
+}
+
+.books{
+	background-position: -131px -1px ;
+	width: 15px;
+	height: 15px;
+}
+
+.eye{
+	background-position: -112px -22px ;
+	width: 14px;
+	height: 12px;
+}
+
+.car {
+	background-position: -132px -24px ;
+	width: 14px;
+	height: 9px;
+}
+
+.label-red{
+	background-position: 0 0;
+	width: 34px;
+	height: 46px;
+}
+
+.home{
+	background-position: -111px 0;
+	width: 15px;
+	height: 15px;
+}
+
+.lamp{
+	background-position: -94px -19px ;
+	width: 15px;
+	height: 15px;
+}
+
+.loup{
+	background-position: -94px -1px ;
+	width: 14px;
+	height: 14px;
+}
+
+.music{
+	background-position: -76px -18px ;
+	width: 15px;
+	height: 15px;
+}
+
+.phone{
+	background-position: -74px 0;
+	width: 15px;
+	height: 15px;
+}
+
+.speech{
+	background-position: -60px -23px ;
+	width: 14px;
+	height: 12px;
+}
+
