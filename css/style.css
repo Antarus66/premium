@@ -117,7 +117,7 @@ nav a {
     padding: 5px 15px;
 }
 
-.active a {
+nav .active a {
     color: #fff;
     background: #636363;
     border-radius: 3px;
@@ -178,6 +178,73 @@ aside {
     width: 250px;
     min-height: 200px;
 }
+
+.menu {
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	font: bold 1.2em Tahoma, Arial, sans-serif;
+}
+
+.menu li {
+	padding: 12px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.menu .active {
+    background: #f3f3f3;
+    color: #f00;
+    border-top: 1px solid #fff;
+}
+
+.active menu li::before {
+    position: absolute;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #000;
+}
+
+.menu .active a {
+    color: #f00;
+}
+
+.menu a::before {
+    display: inline-block;
+    content: '';
+    background-image: url("../images/sprites.png");
+    width: 15px;
+    height: 15px;
+    vertical-align: -2px;
+    margin: 0 15px 0 23px;
+
+}
+.ico-home::before { background-position: -111px 0; }
+.ico-books::before { background-position: -131px -1px; }
+.ico-lamp::before { background-position: -94px -19px }
+.ico-phone::before { background-position:  -74px 0; }
+.ico-music::before { background-position: -76px -18px; }
+
+.menu span {
+    float: right;
+    margin-right: 20px;
+    font-weight: normal;
+    position: relative;
+    background: #f3f3f3;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+.menu span:empty { background: none; }
+
+.menu span:empty::before {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    content: "○";
+}
+
 /* ----------------------------------------*/
 
 /* --------------- Content ----------------*/
@@ -191,4 +258,3 @@ aside {
 
 /* --------------- Footer -----------------*/
 /* ----------------------------------------*/
-
