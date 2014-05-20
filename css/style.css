@@ -1,0 +1,86 @@
+/* --------------- Layout -----------------*/
+html {
+    font-size: 100.01%;
+    background: url(../images/body-bg.png);
+}
+
+body {
+    width: 1100px;
+    margin: 0 auto;
+    font-family: Arial Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+/* ----------------------------------------*/
+
+/* --------------- Header -----------------*/
+header {
+    background: url("../images/header-bg.png") no-repeat;
+    border-top: 2px solid #000;
+}
+
+.header-body {
+    height: 94px;
+    width: 910px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.site-logo,
+.site-slogan,
+.social-ico {
+    position: absolute;
+}
+
+.site-logo {
+    width: 129px;
+    height: 36px;
+    background: url("../images/logo.png") no-repeat;
+    top: 50%;
+    margin-top: -18px;
+    left: 0;
+}
+
+.site-slogan {
+    color: #fff;
+    top: 50%;
+    margin-top: -7px;
+    left: 142px;
+    border-left: 1px dashed #4e4d53;
+    padding-left: 10px;
+}
+
+.site-slogan::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 100%;
+    left: -2px;
+    border-left: 1px dashed #818187;
+}
+
+nav {
+    height: 46px;
+    background: url("../images/menu-bg.png") no-repeat;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+}
+/* ----------------------------------------*/
+
+/* --------------- Main -------------------*/
+/* ----------------------------------------*/
+
+/* --------------- Aside ------------------*/
+/* ----------------------------------------*/
+
+/* --------------- Content ----------------*/
+/* ----------------------------------------*/
+
+/* --------------- Footer -----------------*/
+/* ----------------------------------------*/
+
