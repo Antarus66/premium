@@ -1,3 +1,5 @@
+@import url("sprites.css");
+
 /* --------------- Layout -----------------*/
 html {
     font-size: 100.01%;
@@ -56,6 +58,28 @@ header {
     height: 100%;
     left: -2px;
     border-left: 1px dashed #818187;
+}
+
+.social-ico {
+    top: 50%;
+    margin-top: -10px;
+    right: 35px;
+    font-size: 0;
+}
+
+.social-ico a {
+    display: inline-block;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-image: url("../images/sprites.png");
+}
+
+.social-ico:last-child {
+    margin-right: 0;
+}
+
+a.social-fb {
+    margin-right: 12px;
 }
 
 nav {
