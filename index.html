@@ -24,14 +24,21 @@
             </div>
             <nav>
                 <ul>
-                    <li>Главная</li>
-                    <li>Форум</li>
-                    <li>Блоги</li>
-                    <li>Статьи</li>
-                    <li>Портфолио</li>
-                    <li>Контакты</li>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Форум</a></li>
+                    <li><a href="#">Блоги</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li class="active"><a href="#">Портфолио</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
+                <form name="search-form" class="search-form" method="get">
+                    <div class="search">
+                        <input name="query" type="text" placeholder="Быстрый поиск по сайту...">
+                        <button type="submit"></button>
+                    </div>
+                </form>
             </nav>
+
         </header>
 
         <main>
