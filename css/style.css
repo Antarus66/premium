@@ -214,7 +214,7 @@ aside {
 .menu a,
 .menu .active .menu a {
 	text-decoration: none;
-	color: #000;
+	color: #777;
 }
 
 .menu .active a {
@@ -279,9 +279,18 @@ aside {
 /* --------------- Content ----------------*/
 .content {
     float: left;
-    width: 669px;
+    width: 629px;
     min-height: 500px;
     border-left: 1px solid #ccc;
+    padding: 10px 20px;
+}
+
+.speedbar {
+    border-bottom: 1px solid #ccc;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #777;
+    padding: 5px 0;
 }
 /* ----------------------------------------*/
 
