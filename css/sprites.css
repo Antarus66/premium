@@ -80,3 +80,34 @@
 	height: 12px;
 }
 
+
+.airplane{
+  background-position: -152px -33px ;
+  width: 15px;
+  height: 15px;
+}
+
+.av-placeholder{
+  background-position: -153px -17px ;
+  width: 12px;
+  height: 12px;
+}
+
+.balls{
+  background-position: -169px -33px ;
+  width: 15px;
+  height: 15px;
+}
+
+.cross{
+  background-position: -168px -2px ;
+  width: 14px;
+  height: 14px;
+}
+
+.locker{
+  background-position: -153px -2px ;
+  width: 12px;
+  height: 12px;
+}
+
