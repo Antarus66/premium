@@ -184,6 +184,7 @@ aside {
 	padding: 0;
 	list-style: none;
 	font: bold 1.2em Tahoma, Arial, sans-serif;
+    background-color: #fff;
 }
 
 .menu li {
