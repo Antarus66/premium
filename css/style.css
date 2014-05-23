@@ -283,17 +283,132 @@ aside {
     min-height: 500px;
     border-left: 1px solid #ccc;
     padding: 10px 20px;
+    font-size: 1.2em;
 }
 
 .speedbar {
     border-bottom: 1px solid #ccc;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     color: #777;
     padding: 5px 0;
 }
+
+/*Articles*/
+
+/* Article preview */
+.art-preview {
+
+
+}
+.art-preview img {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.art-preview section {
+    margin-left: 185px;
+}
+
+.art-preview h3 {
+margin-bottom: 0;
+
+}
+
+.art-preview h3 .date {
+    font-size: 0.9em;
+    float: right;
+    border-left: 1px dotted #ccc    ;
+    padding-left: 5px;
+    color: #ddd;
+}
+
+.art-preview p {
+    border-top: 1px dashed #ccc;
+    padding:10px 30px 10px 0;
+    margin: 5px 0;
+    position: relative;
+}
+
+.art-preview p::before,
+.art-preview p::after {
+    background-image: url("../images/sprites.png");
+}
+
+.art-preview p::before {
+    position: absolute;
+    content: '';
+    top: -5px;
+    right: -4px;
+    background-position: 0 0;
+    width: 34px;
+    height: 46px;
+}
+
+.art-preview p::after {
+    content: '';
+    position: absolute;
+    background-position: -132px -24px ;
+    width: 14px;
+    height: 9px;
+    top: 12px;
+    right: 6px;
+}
+
+.infobar {
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+    padding: 5px 0;
+}
+
+.comments-num,
+.views-num {
+    padding: 0 5px 0 17px;
+    position: relative;
+}
+
+.comments-num {
+    margin-right: 10px;
+    border-right: 1px dotted #ccc;
+}
+
+.comments-num::before,
+.views-num::before {
+    position: absolute;
+    content: '';
+    background-image: url("../images/sprites.png");
+    top: 2px;
+    left: 0;
+}
+
+.comments-num::before {
+    background-position: -60px -23px ;
+    width: 14px;
+    height: 12px;
+}
+
+.views-num::before {
+    background-position: -112px -22px ;
+    width: 14px;
+    height: 12px;
+}
+
+.more {
+    float: right;
+    text-decoration: none;
+    color: #000000;
+}
+
 /* ----------------------------------------*/
 
 /* --------------- Footer -----------------*/
 /* ----------------------------------------*/
 
+/* ---------- Separate elements ---------- */
+img {
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+/* ----------------------------------------*/
