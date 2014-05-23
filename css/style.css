@@ -185,6 +185,7 @@ aside {
 	list-style: none;
 	font: bold 1.2em Tahoma, Arial, sans-serif;
     background-color: #fff;
+    overfow: hidden;
 }
 
 .menu li {
@@ -299,12 +300,12 @@ aside {
 
 /* Article preview */
 .art-preview {
-
-
+    overflow: hidden;
+    margin: 5px 0;
 }
 .art-preview img {
     float: left;
-    margin: 0 10px 0 0;
+    margin: 10px 10px 0 0;
 }
 
 .art-preview section {
@@ -340,7 +341,7 @@ margin-bottom: 0;
     position: absolute;
     content: '';
     top: -5px;
-    right: -4px;
+    right: -2px;
     background-position: 0 0;
     width: 34px;
     height: 46px;
@@ -353,7 +354,7 @@ margin-bottom: 0;
     width: 14px;
     height: 9px;
     top: 12px;
-    right: 6px;
+    right: 8px;
 }
 
 .infobar {
@@ -397,9 +398,8 @@ margin-bottom: 0;
 .more {
     float: right;
     text-decoration: none;
-    color: #000000;
+    color: #000;
 }
-
 /* ----------------------------------------*/
 
 /* --------------- Footer -----------------*/
