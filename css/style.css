@@ -415,15 +415,15 @@ aside {
     margin: 15px 0;
 }
 
-.comments-num,
-.views-num {
+.infobar .item {
     padding: 0 5px 0 17px;
     position: relative;
-}
-
-.comments-num {
     margin-right: 10px;
     border-right: 1px dotted #ccc;
+}
+
+.item:last-of-type {
+    border: none;
 }
 
 .comments-num::before,
@@ -447,7 +447,7 @@ aside {
     height: 12px;
 }
 
-.more {
+.outer-link {
     float: right;
     text-decoration: none;
     color: #000;
