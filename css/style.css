@@ -1,5 +1,7 @@
 @import url("sprites.css");
 
+
+
 /* --------------- Layout -----------------*/
 html {
     font-size: 100.01%;
@@ -11,6 +13,72 @@ body {
     margin: 0 auto;
     font-family: Arial Helvetica, sans-serif;
     font-size: 62.5%;
+}
+/* ----------------------------------------*/
+
+/* ---------- Separate elements ---------- */
+img {
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+
+h2 {
+    margin: 20px 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+
+h3 {
+    border-bottom: 1px dashed #ccc;
+    padding: 5px 0;
+    margin: 10px 0;
+}
+
+
+    h2 .descr,
+    h3 .descr {
+        float: right;
+        border-left: 1px dotted #333;
+        padding-left: 5px;
+    }
+
+
+    h2 .descr {
+        font-size: 0.55em;
+        line-height: 1.8em;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: -10px
+    }
+
+
+    h3 .descr {
+        color: #ddd;
+        font-size: 0.85em;
+    }
+
+
+/* Tables */
+.table-wrap {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.table-wrap table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table-wrap td {
+    text-align: center;
 }
 /* ----------------------------------------*/
 
@@ -167,7 +235,7 @@ main {
     margin: 30px auto;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background: #fff;
+    background: #f9f9f9;
     overflow: hidden;
 }
 /* ----------------------------------------*/
@@ -184,7 +252,7 @@ aside {
 	padding: 0;
 	list-style: none;
 	font: bold 1.2em Tahoma, Arial, sans-serif;
-    background-color: #fff;
+    background-color: #f9f9f9;
     overfow: hidden;
 }
 
@@ -205,7 +273,7 @@ aside {
     color: #f00;
 }
 
-.menu .menu li:last-child {
+.menu ul li:last-child {
     border-bottom: none;
 }
 
@@ -214,7 +282,7 @@ aside {
 }
 
 .menu a,
-.menu .active .menu a {
+.menu .active ul a {
 	text-decoration: none;
 	color: #777;
 }
@@ -259,7 +327,7 @@ aside {
     content: "○";
 }
 
-.menu .menu {
+.menu ul {
     display: none;
     position: absolute;
     top: -1px;
@@ -297,50 +365,35 @@ aside {
 }
 
 /*Articles*/
-
 /* Article preview */
 .art-preview {
     overflow: hidden;
-    margin: 5px 0;
+    margin: 0 0 10px;
 }
 .art-preview img {
     float: left;
-    margin: 10px 10px 0 0;
+    margin: 15px 10px 0 0;
+    border-radius: 3px;
 }
 
 .art-preview section {
     margin-left: 185px;
 }
 
-.art-preview h3 {
-margin-bottom: 0;
-
-}
-
-.art-preview h3 .date {
-    font-size: 0.9em;
-    float: right;
-    border-left: 1px dotted #ccc    ;
-    padding-left: 5px;
-    color: #ddd;
-}
-
 .art-preview p {
-    border-top: 1px dashed #ccc;
-    padding:10px 30px 10px 0;
-    margin: 5px 0;
+    padding-right: 30px;
     position: relative;
 }
 
 .art-preview p::before,
 .art-preview p::after {
+    position: absolute;
+    content: '';
     background-image: url("../images/sprites.png");
 }
 
 .art-preview p::before {
-    position: absolute;
-    content: '';
-    top: -5px;
+    top: -17px;
     right: -2px;
     background-position: 0 0;
     width: 34px;
@@ -348,12 +401,10 @@ margin-bottom: 0;
 }
 
 .art-preview p::after {
-    content: '';
-    position: absolute;
     background-position: -132px -24px ;
     width: 14px;
     height: 9px;
-    top: 12px;
+    top: -1px;
     right: 8px;
 }
 
@@ -361,6 +412,7 @@ margin-bottom: 0;
     border-top: 1px dashed #ccc;
     border-bottom: 1px dashed #ccc;
     padding: 5px 0;
+    margin: 15px 0;
 }
 
 .comments-num,
@@ -400,16 +452,13 @@ margin-bottom: 0;
     text-decoration: none;
     color: #000;
 }
+
+/* Article-full */
+.art-full {
+    margin: 30px 0;
+}
+
 /* ----------------------------------------*/
 
 /* --------------- Footer -----------------*/
-/* ----------------------------------------*/
-
-/* ---------- Separate elements ---------- */
-img {
-    padding: 5px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-}
-
 /* ----------------------------------------*/
