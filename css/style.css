@@ -80,6 +80,62 @@ h3 {
 .table-wrap td {
     text-align: center;
 }
+
+/* Forms */
+.search-form {
+    display: inline-block;
+    float: right;
+    position: relative;
+}
+
+    .search-form input {
+        width: 170px;
+        border: none;
+        outline: none;
+        height:28px;
+        line-height: 30px;
+        padding: 0 5px 0;
+    }
+
+    .search-form button {
+        position: absolute;
+        top: 50%;
+        margin-top: -7px;
+        right: 10px;
+        border: none;
+        background-color: transparent;
+        background-image: url("../images/sprites.png");
+        background-position: -94px -1px ;
+        width: 14px;
+        height: 14px;
+    }
+
+.comment-form {
+    margin: 30px 0;
+}
+
+    .comment-form textarea {
+        border: 1px solid #ccc;
+        display: inline-block;
+        height: 30px;
+        margin-right: 7px;
+        vertical-align: middle;
+        width: 514px;
+
+    }
+
+    .comment-form button {
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        color: #f00;
+        font-weight: bold;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        vertical-align: middle;
+        width: 100px;
+    }
 /* ----------------------------------------*/
 
 /* --------------- Header -----------------*/
@@ -191,12 +247,6 @@ nav .active a {
     border-radius: 3px;
 }
 
-.search-form {
-    display: inline-block;
-    float: right;
-    position: relative;
-}
-
 .search {
     height:28px;
     line-height: 28px;
@@ -206,27 +256,7 @@ nav .active a {
     position: relative;
     background: #fff;
 }
-.search-form input {
-    width: 170px;
-    border: none;
-    outline: none;
-    height:28px;
-    line-height: 30px;
-    padding: 0 5px 0;
-}
 
-.search-form button {
-    position: absolute;
-    top: 50%;
-    margin-top: -7px;
-    right: 10px;
-    border: none;
-    background-color: transparent;
-    background-image: url("../images/sprites.png");
-    background-position: -94px -1px ;
-    width: 14px;
-    height: 14px;
-}
 /* ----------------------------------------*/
 
 /* --------------- Main -------------------*/
@@ -349,10 +379,10 @@ aside {
 /* --------------- Content ----------------*/
 .content {
     float: left;
-    width: 629px;
+    width: 630px;
     min-height: 500px;
     border-left: 1px solid #ccc;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 19px;
     font-size: 1.2em;
 }
 
@@ -533,8 +563,6 @@ aside {
             .comm-body .date::before {
                 content: '>>';
             }
-
-
 
 /* ----------------------------------------*/
 
