@@ -581,7 +581,16 @@ nav::after {
             }
 
             .comm-body .date::before {
-                content: '>>';
+                background-image: url("../images/sprites.png");
+                background-position: -134px -41px ;
+                content: '';
+                display: inline-block;
+                height: 6px;
+                margin-right: 3px;
+                vertical-align: 2px;
+                width: 10px;
+
+
             }
 
 /* ----------------------------------------*/
