@@ -133,6 +133,10 @@ img {
     border-radius: 5px;
 }
 
+h2,
+h3 {
+    position: relative;
+}
 
                /* Headings */
 h2 {
@@ -153,22 +157,25 @@ h3 {
 
     h2 .descr,
     h3 .descr {
-        float: right;
         border-left: 1px dotted #333;
         padding-left: 5px;
     }
 
 
     h2 .descr {
+        position: absolute;
+        top: 50%;
+        right: 0;
         font-size: 0.55em;
         line-height: 1.8em;
         padding-top: 5px;
         padding-bottom: 5px;
-        margin-top: -10px
+        margin-top: -22px;
     }
 
 
     h3 .descr {
+        float: right;
         color: #ddd;
         font-size: 0.85em;
     }
