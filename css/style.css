@@ -228,7 +228,7 @@ h3 {
     bottom: 0;
     background: rgba(0,0,0,0.5);
     z-index: 2;
-    display: block;
+    visibility: hidden;
 }
 
     .auth-form > div {
@@ -430,7 +430,7 @@ nav {
     border-bottom: 1px dashed #9f9f9f;
     overflow: visible;
     position: relative;
-    padding: 0 95px 0;
+    padding: 0 90px 0;
 }
 
 nav::after {
@@ -443,7 +443,7 @@ nav::after {
 }
 
     nav ul {
-        margin: 0;
+        margin: 0 0 0 -15px;
         padding: 0;
         float: left;
     }
